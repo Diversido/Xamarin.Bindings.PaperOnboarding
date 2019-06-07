@@ -1,8 +1,0 @@
-[submodule "Xamarin.Bindings.PaperOnboarding/PaperOnboarding.Xamarin.IOS/paper-onboarding"]
-	path = Xamarin.Bindings.PaperOnboarding/PaperOnboarding.Xamarin.IOS/paper-onboarding
-	url = https://github.com/Diversido/paper-onboarding.git
-	branch = modifications-for-xamarin-bindings
-[submodule "Xamarin.Bindings.PaperOnboarding/PaperOnboarding.Xamarin.Android/paper-onboarding-android"]
-	path = Xamarin.Bindings.PaperOnboarding/PaperOnboarding.Xamarin.Android/paper-onboarding-android
-	url = https://github.com/Diversido/paper-onboarding-android.git
-	branch = modifications-for-xamarin-bindings
