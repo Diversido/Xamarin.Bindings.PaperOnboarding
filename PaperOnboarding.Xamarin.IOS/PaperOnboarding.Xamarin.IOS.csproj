@@ -10,9 +10,9 @@
     <OutputType>Library</OutputType>
     <RootNamespace>PaperOnboardingXamarin.IOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
-    <AssemblyName>PaperOnboarding.Xamarin.IOS</AssemblyName>
+    <AssemblyName>PaperOnboarding.Xamarin.iOS</AssemblyName>
     <PackOnBuild>true</PackOnBuild>
-    <PackageId>com.diversido.ios.paperonboarding</PackageId>
+    <PackageId>Paperonboarding.Xamarin.iOS</PackageId>
     <PackageVersion>1.0.0</PackageVersion>
     <Authors>Diversido</Authors>
     <Description>Xamarin bindings for PaperOnboarding library by Ramotion</Description>
@@ -41,7 +41,7 @@
     <Reference Include="Xamarin.iOS" />
   </ItemGroup>
   <ItemGroup>
-    <PackageReference Condition="'$(CreateUITestProject)' == true" Include="Xamarin.TestCloud.Agent" Version="0.21.7" />
+    <PackageReference Include="NuGet.Build.Packaging" Version="0.2.0" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Resources\" />
@@ -62,4 +62,5 @@
     </NativeReference>
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.ObjCBinding.CSharp.targets" />
+  <Import Project="..\packages\NuGet.Build.Packaging.0.2.0\build\NuGet.Build.Packaging.targets" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.0\build\NuGet.Build.Packaging.targets')" />
 </Project>

@@ -1,13 +1,13 @@
 
 Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaperOnboardingSample.IOS", "PaperOnboardingSample.IOS\PaperOnboardingSample.IOS.csproj", "{49183439-9E7C-420F-9E50-C6EEB52FC220}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaperOnboardingSample.iOS", "PaperOnboardingSample.IOS\PaperOnboardingSample.IOS.csproj", "{49183439-9E7C-420F-9E50-C6EEB52FC220}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaperOnboarding.Xamarin.Android", "PaperOnboarding.Xamarin.Android\PaperOnboarding.Xamarin.Android.csproj", "{E90F2769-4CD4-4E79-8675-3A460886FF2F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaperOnboardingSample.Android", "PaperOnboardingSample.Android\PaperOnboardingSample.Android.csproj", "{A2C5F996-AA5B-4BD0-B8BA-66919676215E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaperOnboarding.Xamarin.IOS", "PaperOnboarding.Xamarin.IOS\PaperOnboarding.Xamarin.IOS.csproj", "{1EEF7A4E-CC73-46C2-99AA-54321232B630}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PaperOnboarding.Xamarin.iOS", "PaperOnboarding.Xamarin.IOS\PaperOnboarding.Xamarin.IOS.csproj", "{1EEF7A4E-CC73-46C2-99AA-54321232B630}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

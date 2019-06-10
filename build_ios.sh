@@ -1,6 +1,6 @@
 #!/bin/sh
 
-cd PaperOnboarding.Xamarin.IOS/paper-onboarding/PaperOnboardingDemo
+cd PaperOnboarding.Xamarin.iOS/paper-onboarding/PaperOnboardingDemo
 # Step 1. Build Device and Simulator versions
 xcodebuild -target PaperOnboarding -scheme PaperOnboarding -sdk iphoneos -derivedDataPath builds ONLY_ACTIVE_ARCH=NO
 xcodebuild -target PaperOnboarding -scheme PaperOnboarding -sdk iphonesimulator -derivedDataPath builds ONLY_ACTIVE_ARCH=NO
@@ -11,7 +11,7 @@ lipo -create -output PaperOnboarding2 builds/Build/Products/Release-iphoneos/Pap
 mv PaperOnboarding2 builds/Build/Products/Release-iphoneos/PaperOnboarding.framework
 rm builds/Build/Products/Release-iphoneos/PaperOnboarding.framework/PaperOnboarding
 mv builds/Build/Products/Release-iphoneos/PaperOnboarding.framework/PaperOnboarding2 builds/Build/Products/Release-iphoneos/PaperOnboarding.framework/PaperOnboarding
-sharpie bind -sdk iphoneos12.2 -namespace PaperOnboardingXamarin.IOS -scope builds/Build/Products/Release-iphoneos/PaperOnboarding.framework/Headers builds/Build/Products/Release-iphoneos/PaperOnboarding.framework/Headers/PaperOnboarding-Swift.h
+sharpie bind -sdk iphoneos12.2 -namespace PaperOnboardingXamarin.iOS -scope builds/Build/Products/Release-iphoneos/PaperOnboarding.framework/Headers builds/Build/Products/Release-iphoneos/PaperOnboarding.framework/Headers/PaperOnboarding-Swift.h
 cd ../..
 cp -r paper-onboarding/PaperOnboardingDemo/builds/Build/Products/Release-iphoneos/PaperOnboarding.framework .
 #cp paper-onboarding/PaperOnboardingDemo/ApiDefinitions.cs ApiDefinition.cs
@@ -20,7 +20,9 @@ cp -r paper-onboarding/PaperOnboardingDemo/builds/Build/Products/Release-iphoneo
 
 cd ..
 nuget restore
-msbuild /t:Rebuild /p:Configuration=Release PaperOnboarding.Xamarin.IOS/PaperOnboarding.Xamarin.IOS.csproj
-
+msbuild /t:Rebuild /p:Configuration=Release PaperOnboarding.Xamarin.iOS/PaperOnboarding.Xamarin.iOS.csproj
+#msbuild /t:pack /p:Configuration=Release PaperOnboarding.Xamarin.iOS/PaperOnboarding.Xamarin.iOS.csproj
 mkdir -p _builds/paper-onboarding
-cp PaperOnboarding.Xamarin.IOS/bin/Release/PaperOnboarding.Xamarin.IOS*.dll _builds/paper-onboarding/
+cp PaperOnboarding.Xamarin.iOS/bin/Release/PaperOnboarding.Xamarin.iOS*.dll _builds/paper-onboarding/
+cp PaperOnboarding.Xamarin.iOS/bin/Release/*.nupkg _builds/nugets
+cp PaperOnboarding.Xamarin.iOS/bin/Release/*.nuspec _builds/nugets

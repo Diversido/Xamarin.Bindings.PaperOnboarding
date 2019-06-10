@@ -18,7 +18,7 @@
     <AndroidClassParser>class-parse</AndroidClassParser>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
     <PackOnBuild>true</PackOnBuild>
-    <PackageId>com.diversido.droid.paperonboarding</PackageId>
+    <PackageId>Paperonboarding.Xamarin.Android</PackageId>
     <PackageVersion>1.0.0</PackageVersion>
     <Authors>Diversido</Authors>
     <Description>Xamarin bindings for PaperOnboarding library by Ramotion</Description>
@@ -33,7 +33,6 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>pdbonly</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
     <DefineConstants>TRACE</DefineConstants>

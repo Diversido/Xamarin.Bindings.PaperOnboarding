@@ -25,6 +25,7 @@
         <MtouchArch>x86_64</MtouchArch>
         <MtouchLink>None</MtouchLink>
         <MtouchDebug>true</MtouchDebug>
+        <AssemblyName>PaperOnboardingSample.iOS</AssemblyName>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|iPhoneSimulator' ">
         <DebugType>none</DebugType>
@@ -35,6 +36,7 @@
         <MtouchLink>None</MtouchLink>
         <MtouchArch>x86_64</MtouchArch>
         <ConsolePause>false</ConsolePause>
+        <AssemblyName>PaperOnboardingSample.iOS</AssemblyName>
     </PropertyGroup>
     <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|iPhone' ">
         <DebugSymbols>true</DebugSymbols>
