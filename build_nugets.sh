@@ -1,2 +1,0 @@
-nuget push _builds/nugets/paperonboarding.xamarin.android.1.0.0.nupkg oy2malyrrqk6ntiuxikaxyekcwkps6yutggimqw4gop5re -src https://api.nuget.org/v3/index.json
-nuget push _builds/nugets/paperonboarding.xamarin.iOS.1.0.0.nupkg oy2malyrrqk6ntiuxikaxyekcwkps6yutggimqw4gop5re -src https://api.nuget.org/v3/index.json
