@@ -14,5 +14,6 @@ msbuild /t:Rebuild /p:Configuration=Release PaperOnboarding.Xamarin.Android/Pape
 
 mkdir -p _builds/paper-onboarding
 cp PaperOnboarding.Xamarin.Android/bin/Release/PaperOnboarding.Xamarin.Android*.dll _builds/paper-onboarding/
+mv PaperOnboarding.Xamarin.Android/bin/Release/PaperOnboarding.Xamarin.Android.*.nupkg PaperOnboarding.Xamarin.Android/bin/Release/PaperOnboarding.Xamarin.Android.nupkg
 cp PaperOnboarding.Xamarin.Android/bin/Release/*.nupkg _builds/nugets
 cp PaperOnboarding.Xamarin.Android/bin/Release/*.nuspec _builds/nugets

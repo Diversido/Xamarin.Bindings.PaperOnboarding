@@ -24,5 +24,6 @@ msbuild /t:Rebuild /p:Configuration=Release PaperOnboarding.Xamarin.iOS/PaperOnb
 #msbuild /t:pack /p:Configuration=Release PaperOnboarding.Xamarin.iOS/PaperOnboarding.Xamarin.iOS.csproj
 mkdir -p _builds/paper-onboarding
 cp PaperOnboarding.Xamarin.iOS/bin/Release/PaperOnboarding.Xamarin.iOS*.dll _builds/paper-onboarding/
+mv PaperOnboarding.Xamarin.iOS/bin/Release/PaperOnboarding.Xamarin.iOS.*.nupkg PaperOnboarding.Xamarin.iOS/bin/Release/PaperOnboarding.iOS.Android.nupkg
 cp PaperOnboarding.Xamarin.iOS/bin/Release/*.nupkg _builds/nugets
 cp PaperOnboarding.Xamarin.iOS/bin/Release/*.nuspec _builds/nugets
