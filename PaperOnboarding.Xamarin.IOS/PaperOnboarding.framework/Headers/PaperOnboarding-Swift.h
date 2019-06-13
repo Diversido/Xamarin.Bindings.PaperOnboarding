@@ -198,9 +198,14 @@ SWIFT_CLASS_NAMED("GestureControl")
 
 
 
+@class UIImageView;
+@class UILabel;
 
 SWIFT_CLASS_NAMED("OnboardingContentViewItem")
 @interface OnboardingContentViewItem : UIView
+@property (nonatomic, strong) UIImageView * _Nullable imageView;
+@property (nonatomic, strong) UILabel * _Nullable titleLabel;
+@property (nonatomic, strong) UILabel * _Nullable descriptionLabel;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)_ OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end
@@ -511,9 +516,14 @@ SWIFT_CLASS_NAMED("GestureControl")
 
 
 
+@class UIImageView;
+@class UILabel;
 
 SWIFT_CLASS_NAMED("OnboardingContentViewItem")
 @interface OnboardingContentViewItem : UIView
+@property (nonatomic, strong) UIImageView * _Nullable imageView;
+@property (nonatomic, strong) UILabel * _Nullable titleLabel;
+@property (nonatomic, strong) UILabel * _Nullable descriptionLabel;
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)_ OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithFrame:(CGRect)frame SWIFT_UNAVAILABLE;
 @end

@@ -16,8 +16,11 @@ open class OnboardingContentViewItem: UIView {
     public var informationImageWidthConstraint: NSLayoutConstraint?
     public var informationImageHeightConstraint: NSLayoutConstraint?
     
+    @objc(imageView)
     open var imageView: UIImageView?
+    @objc(titleLabel)
     open var titleLabel: UILabel?
+    @objc(descriptionLabel)
     open var descriptionLabel: UILabel?
 
     init(titlePadding: CGFloat, descriptionPadding: CGFloat) {

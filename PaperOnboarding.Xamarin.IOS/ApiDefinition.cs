@@ -16,6 +16,18 @@ namespace PaperOnboardingXamarin.iOS
 	[BaseType (typeof(UIView))]
 	interface OnboardingContentViewItem
 	{
+		// @property (nonatomic, strong) UIImageView * _Nullable imageView;
+		[NullAllowed, Export ("imageView", ArgumentSemantic.Strong)]
+		UIImageView ImageView { get; set; }
+
+		// @property (nonatomic, strong) UILabel * _Nullable titleLabel;
+		[NullAllowed, Export ("titleLabel", ArgumentSemantic.Strong)]
+		UILabel TitleLabel { get; set; }
+
+		// @property (nonatomic, strong) UILabel * _Nullable descriptionLabel;
+		[NullAllowed, Export ("descriptionLabel", ArgumentSemantic.Strong)]
+		UILabel DescriptionLabel { get; set; }
+
 		// -(instancetype _Nullable)initWithCoder:(NSCoder * _Nonnull)_ __attribute__((objc_designated_initializer));
 		//[Export ("initWithCoder:")]
 		//[DesignatedInitializer]
