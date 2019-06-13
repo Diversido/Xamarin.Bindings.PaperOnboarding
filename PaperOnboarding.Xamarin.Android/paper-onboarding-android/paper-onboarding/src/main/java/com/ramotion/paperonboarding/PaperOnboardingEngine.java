@@ -48,7 +48,7 @@ public class PaperOnboardingEngine implements PaperOnboardingEngineDefaults {
     private final LinearLayout mContentCenteredContainer;
 
     // application context
-    private final Context mAppContext;
+    protected final Context mAppContext;
 
     // state variables
     private ArrayList<PaperOnboardingPage> mElements = new ArrayList<>();

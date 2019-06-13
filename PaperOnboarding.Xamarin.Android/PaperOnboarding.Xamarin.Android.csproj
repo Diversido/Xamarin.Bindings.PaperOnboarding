@@ -18,8 +18,8 @@
     <AndroidClassParser>class-parse</AndroidClassParser>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
     <PackOnBuild>true</PackOnBuild>
-    <PackageId>Paperonboarding.Xamarin.Android</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageId>PaperOnboarding.Xamarin.Android</PackageId>
+    <PackageVersion>1.0.1</PackageVersion>
     <Authors>Diversido</Authors>
     <Description>Xamarin bindings for PaperOnboarding library by Ramotion</Description>
   </PropertyGroup>
