@@ -8,12 +8,12 @@
     <ProjectGuid>{1EEF7A4E-CC73-46C2-99AA-54321232B630}</ProjectGuid>
     <TemplateGuid>{b6f3ff35-79b2-4f25-a2fc-60a7cf61013b}</TemplateGuid>
     <OutputType>Library</OutputType>
-    <RootNamespace>PaperOnboardingXamarin.IOS</RootNamespace>
+    <RootNamespace>PaperOnboardingXamarin.iOS</RootNamespace>
     <IPhoneResourcePrefix>Resources</IPhoneResourcePrefix>
     <AssemblyName>PaperOnboarding.Xamarin.iOS</AssemblyName>
     <PackOnBuild>true</PackOnBuild>
-    <PackageId>Paperonboarding.Xamarin.iOS</PackageId>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageId>PaperOnboarding.Xamarin.iOS</PackageId>
+    <PackageVersion>1.0.2</PackageVersion>
     <Authors>Diversido</Authors>
     <Description>Xamarin bindings for PaperOnboarding library by Ramotion</Description>
   </PropertyGroup>

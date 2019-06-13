@@ -1,6 +1,6 @@
 ﻿using UIKit;
 
-namespace PaperOnboardingSample.IOS
+namespace PaperOnboardingSample.iOS
 {
 	public class Application
 	{

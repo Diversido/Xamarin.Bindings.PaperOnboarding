@@ -4,7 +4,7 @@ using Foundation;
 using ObjCRuntime;
 using UIKit;
 
-namespace PaperOnboardingXamarin.IOS
+namespace PaperOnboardingXamarin.iOS
 {
 	// @interface GestureControl : UIView
 	[BaseType (typeof(UIView))]

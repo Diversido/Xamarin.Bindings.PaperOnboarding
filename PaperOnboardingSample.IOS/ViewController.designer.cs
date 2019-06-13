@@ -9,10 +9,13 @@ using System;
 using System.CodeDom.Compiler;
 using UIKit;
 
-namespace PaperOnboardingSample.IOS
+namespace PaperOnboardingSample.iOS
 {
-	[Register ("ViewController")]
-	partial class ViewController
-	{
-	}
+    [Register ("ViewController")]
+    partial class ViewController
+    {
+        void ReleaseDesignerOutlets ()
+        {
+        }
+    }
 }

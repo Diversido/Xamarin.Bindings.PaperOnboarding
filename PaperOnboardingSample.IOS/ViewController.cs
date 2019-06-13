@@ -2,9 +2,9 @@
 using System;
 using UIKit;
 using CoreGraphics;
-using PaperOnboardingXamarin.IOS;
+using PaperOnboardingXamarin.iOS;
 
-namespace PaperOnboardingSample.IOS
+namespace PaperOnboardingSample.iOS
 {
 	public partial class ViewController : UIViewController, IPaperOnboardingDataSource, IPaperOnboardingDelegate
 	{
@@ -12,38 +12,38 @@ namespace PaperOnboardingSample.IOS
 		{
 			new OnboardingItemInfoObjC(informationImage: UIImage.FromFile("banks.png"),
 						   title: "Banks",
-						   description: "All dogs are good",
+						   description: "All dogs are good lsdhglkxfhjgklj slkjdflkjs lkjsl dkslkjfslkfj slkjf ",
 						   pageIcon: UIImage.FromFile("wallet.png"),
 						   color: new UIColor(red: 0.4f, green: 0.56f, blue: 0.71f, alpha: 1.00f),
 						   titleColor: UIColor.White,
 						   descriptionColor: UIColor.White,
 						   titleFont: UIFont.PreferredBody,
 						   descriptionFont: UIFont.PreferredSubheadline,
-						   descriptionLabelPadding: 0,
+						   descriptionLabelPadding: 80,
 						   titleLabelPadding: 0),
 
 		new OnboardingItemInfoObjC(informationImage: UIImage.FromFile("hotels.png"),
 						   title: "Hotels",
-						   description: "All dogs are good",
+						   description: "All dogs are good dlfjghldf ldhg lsh lskhfk h kh lskf ",
 						   pageIcon: UIImage.FromFile("key.png"),
 						   color: new UIColor(red: 0.4f, green: 0.56f, blue: 0.71f, alpha: 1.00f),
 						   titleColor: UIColor.Red,
 						   descriptionColor: UIColor.Red,
 						   titleFont: UIFont.PreferredBody,
 						   descriptionFont: UIFont.PreferredSubheadline,
-						   descriptionLabelPadding: 0,
+						   descriptionLabelPadding: 80,
 						   titleLabelPadding: 0),
 
 		new OnboardingItemInfoObjC(informationImage: UIImage.FromFile("stores.png"),
 						   title: "Stores",
-						   description: "All dogs are good",
+						   description: "All dogs are good sldkf jlskjlks jsdlk jflksj fsdkl ",
 						   pageIcon: UIImage.FromFile("shopping_cart.png"),
 						   color: new UIColor(red: 0.4f, green: 0.56f, blue: 0.71f, alpha: 1.00f),
 						   titleColor: UIColor.Green,
 						   descriptionColor: UIColor.Green,
 						   titleFont: UIFont.PreferredBody,
 						   descriptionFont: UIFont.PreferredSubheadline,
-						   descriptionLabelPadding: 0,
+						   descriptionLabelPadding: 80,
 						   titleLabelPadding: 0),
 
 		};
@@ -105,6 +105,7 @@ namespace PaperOnboardingSample.IOS
 
 		public void OnboardingConfigurationItem (OnboardingContentViewItem item, nint index)
 		{
+			item.DescriptionLabel.TextAlignment = UITextAlignment.Center;
 		}
 	}
 }
