@@ -6,7 +6,7 @@ IMPORTANT: The sources for the bindings were a bit modified for our companies ne
 You can install them via Nuget:
 
 https://www.nuget.org/packages/paperonboarding.xamarin.iOS/
-https://www.nuget.org/packages/MaterialShowcase.Xamarin.Android/
+https://www.nuget.org/packages/paperonboarding.xamarin.android/
 
 How to add changes:
 
