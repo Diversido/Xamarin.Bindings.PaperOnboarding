@@ -1,13 +1,11 @@
 ﻿using System;
-using System.Drawing;
 using Android.App;
 using Android.OS;
-using Android.Support.V7.App;
-using Android.Support.V7.Widget;
 using Android.Views;
 using Com.Ramotion.Paperonboarding;
-using static Android.Views.View;
 using Com.Ramotion.Paperonboarding.Listeners;
+using AndroidX.AppCompat.App;
+using Android.Graphics;
 
 namespace PaperOnboardingSample.Android
 {

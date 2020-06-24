@@ -9,7 +9,7 @@ using Android.Runtime;
 using Android.Util;
 using Android.Views;
 using Android.Widget;
-using Android.Support.V4.App;
+using AndroidX.Fragment.App;
 
 namespace PaperOnboardingSample.Android
 {
