@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 cd PaperOnboarding.Xamarin.iOS/paper-onboarding/PaperOnboardingDemo
 # Step 1. Build Device and Simulator versions
 xcodebuild -target PaperOnboarding -scheme PaperOnboarding -sdk iphoneos -derivedDataPath builds ONLY_ACTIVE_ARCH=NO

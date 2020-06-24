@@ -1,5 +1,7 @@
 #!/bin/sh
 
+set -e
+
 # build Android library
 cd PaperOnboarding.Xamarin.Android/paper-onboarding-android
 gradle assembleRelease

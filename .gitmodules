@@ -1,6 +1,6 @@
 [submodule "PaperOnboarding.Xamarin.Android/paper-onboarding-android"]
 	path = PaperOnboarding.Xamarin.Android/paper-onboarding-android
-	url = git@github.com:Ramotion/paper-onboarding-android.git
+	url = git@github.com:Diversido/paper-onboarding-android.git
 [submodule "PaperOnboarding.Xamarin.IOS/paper-onboarding"]
 	path = PaperOnboarding.Xamarin.IOS/paper-onboarding
 	url = git@github.com:Diversido/paper-onboarding.git
