@@ -2,6 +2,8 @@
 
 set -e
 
+SDK=iphoneos13.5
+
 cd PaperOnboarding.Xamarin.iOS/paper-onboarding/PaperOnboardingDemo
 # Step 1. Build Device and Simulator versions
 xcodebuild -target PaperOnboarding -scheme PaperOnboarding -sdk iphoneos -derivedDataPath builds ONLY_ACTIVE_ARCH=NO
@@ -13,7 +15,7 @@ lipo -create -output PaperOnboarding2 builds/Build/Products/Release-iphoneos/Pap
 mv PaperOnboarding2 builds/Build/Products/Release-iphoneos/PaperOnboarding.framework
 rm builds/Build/Products/Release-iphoneos/PaperOnboarding.framework/PaperOnboarding
 mv builds/Build/Products/Release-iphoneos/PaperOnboarding.framework/PaperOnboarding2 builds/Build/Products/Release-iphoneos/PaperOnboarding.framework/PaperOnboarding
-sharpie bind -sdk iphoneos12.2 -namespace PaperOnboardingXamarin.iOS -scope builds/Build/Products/Release-iphoneos/PaperOnboarding.framework/Headers builds/Build/Products/Release-iphoneos/PaperOnboarding.framework/Headers/PaperOnboarding-Swift.h
+sharpie bind -sdk $SDK -namespace PaperOnboardingXamarin.iOS -scope builds/Build/Products/Release-iphoneos/PaperOnboarding.framework/Headers builds/Build/Products/Release-iphoneos/PaperOnboarding.framework/Headers/PaperOnboarding-Swift.h
 cd ../..
 cp -r paper-onboarding/PaperOnboardingDemo/builds/Build/Products/Release-iphoneos/PaperOnboarding.framework .
 #cp paper-onboarding/PaperOnboardingDemo/ApiDefinitions.cs ApiDefinition.cs
@@ -24,8 +26,8 @@ cd ..
 nuget restore
 msbuild /t:Rebuild /p:Configuration=Release PaperOnboarding.Xamarin.iOS/PaperOnboarding.Xamarin.iOS.csproj
 #msbuild /t:pack /p:Configuration=Release PaperOnboarding.Xamarin.iOS/PaperOnboarding.Xamarin.iOS.csproj
+
 mkdir -p _builds/paper-onboarding
 cp PaperOnboarding.Xamarin.iOS/bin/Release/PaperOnboarding.Xamarin.iOS*.dll _builds/paper-onboarding/
-mv PaperOnboarding.Xamarin.iOS/bin/Release/PaperOnboarding.Xamarin.iOS.*.nupkg PaperOnboarding.Xamarin.iOS/bin/Release/PaperOnboarding.iOS.Android.nupkg
-cp PaperOnboarding.Xamarin.iOS/bin/Release/*.nupkg _builds/nugets
-cp PaperOnboarding.Xamarin.iOS/bin/Release/*.nuspec _builds/nugets
+cp PaperOnboarding.Xamarin.iOS/bin/Package/PaperOnboarding.Xamarin.iOS.*.nupkg _builds/nugets/PaperOnboarding.Xamarin.iOS.nupkg
+cp PaperOnboarding.Xamarin.iOS/obj/Release/*.nuspec _builds/nugets

@@ -18,6 +18,7 @@ Resource.designer.cs
 
 # Build folder
 _builds
+PaperOnboarding.Xamarin.IOS/PaperOnboarding.framework/
 
 # build
 [Oo]bj/

@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
-  <Import Project="..\packages\NuGet.Build.Packaging.0.2.0\build\NuGet.Build.Packaging.props" Condition="Exists('..\packages\NuGet.Build.Packaging.0.2.0\build\NuGet.Build.Packaging.props')" />
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
@@ -17,11 +16,6 @@
     <TargetFrameworkVersion>v9.0</TargetFrameworkVersion>
     <AndroidClassParser>class-parse</AndroidClassParser>
     <AndroidCodegenTarget>XAJavaInterop1</AndroidCodegenTarget>
-    <PackOnBuild>true</PackOnBuild>
-    <PackageId>PaperOnboarding.Xamarin.Android</PackageId>
-    <PackageVersion>1.0.1</PackageVersion>
-    <Authors>Diversido</Authors>
-    <Description>Xamarin bindings for PaperOnboarding library by Ramotion</Description>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -60,6 +54,28 @@
   <ItemGroup>
     <LibraryProjectZip Include="Jars\paper-onboarding-release.aar" />
   </ItemGroup>
+
+  <!-- NuGet Package Details -->
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+    <PackageId>PaperOnboarding.Xamarin.Android</PackageId>
+    <PackageTags>Xamarin;Android;</PackageTags>
+    <Version>1.1.3</Version>
+    <Authors>Anastasiia Shevnina, Alexey Shikov</Authors>
+    <Company>Diversido</Company>
+    <Description>Xamarin bindings for PaperOnboarding library by Ramotion</Description>
+    <PackageOutputPath>bin\Package</PackageOutputPath>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Xamarin.AndroidX.AppCompat" Version="1.1.0.1" />
+    <PackageReference Include="NuGet.Build.Tasks.Pack">
+      <Version>5.6.0</Version>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
+  </ItemGroup>
+
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\Android\Xamarin.Android.Bindings.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
