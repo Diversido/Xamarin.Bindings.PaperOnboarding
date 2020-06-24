@@ -49,3 +49,10 @@ sh build_ios.sh
 sh nuget_android.sh
 sh nuget_ios.sh
 ```
+
+## Troubleshooting
+
+If the iOS build script fails:
+
+- update `SDK` property to match the locally intalled one 
+- ensure the `sharpie` CLI is installed (https://docs.microsoft.com/en-us/xamarin/cross-platform/macios/binding/objective-sharpie/get-started)
